@@ -21,8 +21,8 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!xgufh6n0fthhu(mn#-9^(f((xtjg!pv^)ml#c7cs^5#4y5xs1'
-#SECRET_KEY = config('SECRET_KEY')
+#SECRET_KEY = '!xgufh6n0fthhu(mn#-9^(f((xtjg!pv^)ml#c7cs^5#4y5xs1'
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # SECURITY WARNING: don't run with debug turned on in production!
